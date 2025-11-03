@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>شماره شباهای شرکت مهندسی امیر پوشش فرتاک</title>
+<style>
+  body {
+    font-family: "Vazir", sans-serif;
+    background: linear-gradient(135deg, #f6fff6, #e9fbe9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  h1 {
+    color: #155e15;
+    margin-bottom: 0;
+  }
+  p {
+    color: #444;
+    margin-top: 8px;
+    margin-bottom: 30px;
+  }
+  .card {
+    background: #ffffffd8;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 15px;
+    padding: 20px;
+    width: 320px;
+    margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    background: #f9fff9;
+  }
+  .bank-name {
+    font-weight: bold;
+    color: #0a570a;
+    font-size: 1.1em;
+  }
+  .shaba {
+    color: #333;
+    font-family: monospace;
+    font-size: 0.95em;
+    direction: ltr;
+    text-align: left;
+  }
+  button {
+    background-color: #31a84a;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  button:hover {
+    background-color: #278b3e;
+  }
+</style>
+</head>
+<body>
+
+<h1>شرکت مهندسی امیر پوشش فرتاک</h1>
+<p>برای کپی کردن شماره شبا، روی دکمه‌ی «کپی» کنار هر بانک بزنید.</p>
+
+<div class="card">
+  <div>
+    <div class="bank-name">بانک شهر</div>
+    <div class="shaba">IR950610000007001004486620</div>
+  </div>
+  <button onclick="copyText('IR950610000007001004486620')">کپی</button>
+</div>
+
+<div class="card">
+  <div>
+    <div class="bank-name">بانک ملی</div>
+    <div class="shaba">IR940170000000114152664004</div>
+  </div>
+  <button onclick="copyText('IR940170000000114152664004')">کپی</button>
+</div>
+
+<div class="card">
+  <div>
+    <div class="bank-name">بانک سینا</div>
+    <div class="shaba">IR920590046800446846867001</div>
+  </div>
+  <button onclick="copyText('IR920590046800446846867001')">کپی</button>
+</div>
+
+<div class="card">
+  <div>
+    <div class="bank-name">بانک صادرات</div>
+    <div class="shaba">IR040190000000118073237004</div>
+  </div>
+  <button onclick="copyText('IR040190000000118073237004')">کپی</button>
+</div>
+
+<div class="card">
+  <div>
+    <div class="bank-name">بانک سرمایه</div>
+    <div class="shaba">IR060580160602602369975001</div>
+  </div>
+  <button onclick="copyText('IR060580160602602369975001')">کپی</button>
+</div>
+
+<script>
+function copyText(text) {
+  navigator.clipboard.writeText(text);
+  alert('شماره شبا کپی شد ✅');
+}
+</script>
+
+</body>
+</html>
